@@ -6,7 +6,7 @@
 
 template<typename T>
 void f(const T& param){           // param is a const reference
-    std::cout << param << std::endl;
+    std::cout << typeid(param).name() << " - " << param << std::endl;
 }
 
 int main() {

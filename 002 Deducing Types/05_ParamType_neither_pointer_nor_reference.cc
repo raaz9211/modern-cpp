@@ -5,7 +5,7 @@
 
 template<typename T>
 void f(T param){           // param is a value
-    std::cout << param << std::endl;
+    std::cout << typeid(param).name() << " - " << param << std::endl;
 }
 
 int main() {
